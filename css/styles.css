@@ -430,7 +430,79 @@ transition: fill var(--time-and-cubic), border-color var(--time-and-cubic);
     font-size: 16px;
     margin-bottom: 16px;
 }
+.social-list-block{
+    margin-right: 80px;
+}
 
+/*------ Subscribe */
+
+.block-subscribe {
+    display: flex;  
+}
+
+.subscr-email{
+    height: 40px;
+    min-width: 264px;
+    padding-left: 16px;
+    color: #FFFFFF;
+    margin-right: 24px;
+
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;  
+}
+
+.subscr-email::placeholder{
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.subscr-send-btn {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    min-width: 165px;
+    height: 40px;
+    background: #4D5AE5;
+    border-radius: 4px;
+    border-color: transparent;
+    color: #FFFFFF;
+    justify-content: start;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 48px;
+    transition: background-color var(--time-and-cubic), color var(--time-and-cubic),
+    border-color var(--time-and-cubic), box-shadow var(--time-and-cubic);
+}
+
+.subscr-send-btn:focus,
+.subscr-send-btn:hover {
+    background-color: var(--color-btn-focus);
+    color: var(--text-btn-focus);
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.btn-subscr{
+    display: flex;
+    position: relative;
+}
+
+.icon-subscripe {
+    position: absolute;
+    right: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /*---------Portfolio---------  */
 
@@ -561,6 +633,9 @@ transition: fill var(--time-and-cubic), border-color var(--time-and-cubic);
     top: 50%;
     left: 50%;
 
+    padding: 72px 24px 24px 24px;
+    text-align: center;
+
     transform: translate(-50%, -50%) skewX(0deg);;
     transition: transform var(--time-and-cubic);
     
@@ -572,7 +647,8 @@ transition: fill var(--time-and-cubic), border-color var(--time-and-cubic);
 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px 
     rgba(0, 0, 0, 0.12), 0px 2px 1px 
-    rgba(0, 0, 0, 0.2);      
+    rgba(0, 0, 0, 0.2); 
+    
 
 }
 
@@ -613,4 +689,174 @@ transition: fill var(--time-and-cubic), border-color var(--time-and-cubic);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+/*------- Input modal--------  */
+.title-modal-window{
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.name-input{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.block-user-name{
+    display: block;
+    margin-bottom: 8px;
+    text-align: start;
+    position: relative;
+}
+.block-user-coment{
+    margin-bottom: 16px;
+    text-align: start;
+    position: relative;
+    padding: 0;
+}
+.block-checkbox{
+    margin-bottom: 24px;
+}
+.input-icon{
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+
+    top: 50%;
+    transform: translateY(15%);
+
+    fill: #2E2F42;
+}
+
+.input-size{
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    border: transparent;
+    border: 1px solid rgba(46, 47, 66, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+}
+/* -----------border focus style----------*/
+.input-size:focus,
+.user-coment:focus{
+border-color: rgba(77, 90, 229, 1);
+}
+
+.input-size:focus + .input-icon{
+    fill: #4D5AE5;
+    
+}
+.user-coment{
+    display: block;
+    width: 100%;
+    height: 120px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    resize: none;
+    border: transparent;
+    border: 1px solid rgba(46, 47, 66, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+
+}
+/* ---------Chek box Privacy Policy -----------*/
+.check-privacy{
+    display: flex;
+    align-items: baseline;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+
+}
+/* -----------border-check custom----------*/
+.border-check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+    border: 1px solid #2E2F42;
+    border-radius: 2px;
+    margin-right: 8px;
+    
+    fill: transparent;
+
+    transition: background-color var(--time-and-cubic),
+    border var(--time-and-cubic), fill var(--time-and-cubic);
+}
+/* -----------check original hiden----------*/
+.check-input{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* -----------Checked custom checkbox----------*/
+
+.check-input:checked  + .check-privacy .border-check{
+    border: none;
+    background-color: #404BBF;
+    fill: #F4F4FD;
+}
+/* -----------Style link Privacy Policy----------*/
+.link-privacy{
+    transition: var(--time-and-cubic);
+}
+.link-privacy:hover, .link-privacy:focus{
+    color: var(--color-link-focus)
+}
+
+/* ---------Btn-modal---------- */
+.btn-send{
+
+    min-width: 169px;
+    height: 56px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: background-color var(--time-and-cubic), color var(--time-and-cubic),
+    border-color var(--time-and-cubic), box-shadow var(--time-and-cubic);
+}
+
+.btn-send:hover,
+.btn-send:focus{
+    background-color: var(--color-btn-focus);
+    color: var(--text-btn-focus);
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
