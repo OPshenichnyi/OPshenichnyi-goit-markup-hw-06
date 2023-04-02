@@ -430,14 +430,17 @@ transition: fill var(--time-and-cubic), border-color var(--time-and-cubic);
     font-size: 16px;
     margin-bottom: 16px;
 }
-.social-list-block{
-    margin-right: 80px;
-}
+
+
 
 /*------ Subscribe */
+.block-subscribe{
+    margin-left: auto;
+}
 
-.block-subscribe {
-    display: flex;  
+.form-subscribe{
+    display: flex;
+    align-items: center;
 }
 
 .subscr-email{
@@ -492,16 +495,11 @@ transition: fill var(--time-and-cubic), border-color var(--time-and-cubic);
         0px 2px 1px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.btn-subscr{
+.subscr-send-btn{
     display: flex;
-    position: relative;
-}
-
-.icon-subscripe {
-    position: absolute;
-    right: 12%;
-    top: 50%;
-    transform: translateY(-50%);
+    gap: 16px;
+    padding: 8px 24px 8px 24px;
+    cursor: pointer;
 }
 
 /*---------Portfolio---------  */
@@ -706,13 +704,15 @@ transition: fill var(--time-and-cubic), border-color var(--time-and-cubic);
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: #8E8F99;
+
+    display: block;
+    margin-bottom: 4px;
 }
 
 .block-user-name{
     display: block;
     margin-bottom: 8px;
     text-align: start;
-    position: relative;
 }
 .block-user-coment{
     margin-bottom: 16px;
@@ -723,14 +723,16 @@ transition: fill var(--time-and-cubic), border-color var(--time-and-cubic);
 .block-checkbox{
     margin-bottom: 24px;
 }
+.input-icon-position{
+   position: relative; 
+}
+
 .input-icon{
     display: inline-block;
     position: absolute;
     left: 16px;
-
     top: 50%;
-    transform: translateY(15%);
-
+    transform: translateY(-50%);
     fill: #2E2F42;
 }
 
@@ -743,7 +745,7 @@ transition: fill var(--time-and-cubic), border-color var(--time-and-cubic);
     border-radius: 4px;
     outline: transparent;
 }
-/* -----------border focus style----------*/
+/* -----------border focus----------*/
 .input-size:focus,
 .user-coment:focus{
 border-color: rgba(77, 90, 229, 1);
@@ -762,7 +764,6 @@ border-color: rgba(77, 90, 229, 1);
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
     padding-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
@@ -771,7 +772,13 @@ border-color: rgba(77, 90, 229, 1);
     border: 1px solid rgba(46, 47, 66, 0.2);
     border-radius: 4px;
     outline: transparent;
-
+}
+.user-coment::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
 }
 /* ---------Chek box Privacy Policy -----------*/
 .check-privacy{
@@ -825,6 +832,7 @@ border-color: rgba(77, 90, 229, 1);
 }
 /* -----------Style link Privacy Policy----------*/
 .link-privacy{
+    color: #4D5AE5;
     transition: var(--time-and-cubic);
 }
 .link-privacy:hover, .link-privacy:focus{

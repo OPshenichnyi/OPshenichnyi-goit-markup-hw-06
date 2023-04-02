@@ -396,21 +396,17 @@
                 </ul>
             </div>
             <!-- Subscribe -->
-            <div>
+            <div class="block-subscribe">
                 <p class="footer-name-social">Subscribe</p>
-                <form>
-                    <div class="block-subscribe">
-                        <label for="input-email"></label>
-                        <input type="email" id="input-email" class="subscr-email" placeholder="E-mail"
-                            name="subscr-email">
-                        <div class="btn-subscr">
-                            <button type="submit" class="subscr-send-btn">Subscribe</button>
-                            <svg class="icon-subscripe" width="24" height="24">
-                                <use href="./images/sprite.svg#icon-subscripe"></use>
-                            </svg>
-                        </div>
+                <form class="form-subscribe">
+                    <input type="email" aria-label="Input you email" id="input-email" class="subscr-email"
+                        placeholder="E-mail" name="subscr-email">
+                    <button type="submit" class="subscr-send-btn">Subscribe
+                        <svg class="icon-subscripe" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-subscripe"></use>
+                        </svg>
+                    </button>
 
-                    </div>
                 </form>
             </div>
         </div>
@@ -427,24 +423,33 @@
             <form>
                 <div class="block-user-name">
                     <label for="user-name" class="name-input">Name</label>
-                    <input type="text" id="user-name" class="user-name input-size" name="user-name">
-                    <svg class="input-icon" width="18" height="18">
-                        <use href="./images/sprite.svg#person-black"></use>
-                    </svg>
+                    <div class="input-icon-position">
+                        <input type="text" id="user-name" class="user-name input-size" name="user-name">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/sprite.svg#person-black"></use>
+                        </svg>
+                    </div>
+
                 </div>
                 <div class="block-user-name">
                     <label for="user-phone" class="name-input">Phone</label>
-                    <input type="tel" id="user-phone" class="user-phone input-size" name="user-phone">
-                    <svg class="input-icon" width="18" height="18">
-                        <use href="./images/sprite.svg#phone-black"></use>
-                    </svg>
+                    <div class="input-icon-position">
+                        <input type="tel" id="user-phone" class="user-phone input-size" name="user-phone">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/sprite.svg#phone-black"></use>
+                        </svg>
+                    </div>
+
                 </div>
                 <div class="block-user-name">
                     <label for="user-email" class="name-input">Email</label>
-                    <input type="tel" id="user-email" class="user-email input-size" name="user-email">
-                    <svg class="input-icon" width="18" height="18">
-                        <use href="./images/sprite.svg#email-black"></use>
-                    </svg>
+                    <div class="input-icon-position">
+                        <input type="email" id="user-email" class="user-email input-size" name="user-email">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/sprite.svg#email-black"></use>
+                        </svg>
+                    </div>
+
                 </div>
                 <div class="block-user-coment">
                     <label for="user-coment" class="name-input">Comment</label>
@@ -459,8 +464,11 @@
                             <svg class="icon-chek" width="10" height="8">
                                 <use href="./images/sprite.svg#icon-chek"></use>
                             </svg>
-                        </span> I accept the terms and conditions of the <a href="" class="link-privacy">Privacy
-                            Policy</a>
+                        </span>
+                        <span>
+                            I accept the terms and conditions of the
+                            <a href="" class="link-privacy">Privacy Policy</a>
+                        </span>
                     </label>
                 </div>
                 <button type="submit" class="btn-send">Send</button>
